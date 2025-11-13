@@ -2,7 +2,7 @@
 
 /*
     Paleta de cores
-    Verde #29a09d
+    Verde #29a09d 
     Lilás: #5f2c82
 */
 
@@ -21,9 +21,9 @@ body, html {
 }
 
 main {
-    height: 100vh;
-    width: 100vw;
     position: relative;
+    height: 100vh;
+    width: 100vw; 
 }
 
 section#login {
@@ -38,12 +38,16 @@ section#login {
     height: 500px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    transition: width 0.3s, height 0.3s; /*transição quando troca o tamanho*/
+    transition-timing-function: ease; /*faz a transição ficar mais suave*/
 }
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url('../imagens/fundo.jpg') no-repeat center center;
+    background: #5f2c82 url('../imagens/fundo.jpg') no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 200px;
 }
 
