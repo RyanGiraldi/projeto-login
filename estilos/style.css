@@ -51,7 +51,15 @@ section#login > div#imagem {
     height: 200px;
 }
 
-section#login > #formulario {
+section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
 }
