@@ -14,12 +14,15 @@ Grandes telas: acima de 1200px
 @media screen and (min-width: 768px) and (max-width: 992px) {  
     
     body {
-        
+        /*background-image: linear-gradient(to top, #29a09d, #5f2c82);*/
+        background: url('../imagens/fundologin.jpg')  no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     section#login {
         width: 80vw;
-        height: 290px;
+        height: 350px;
     }
 
     section#login > div#imagem {
@@ -40,7 +43,10 @@ Grandes telas: acima de 1200px
 @media screen and (min-width: 992px) { 
     
     body {
-        background-image: linear-gradient(to top, #29a09d, #5f2c82);
+        /*background-image: linear-gradient(to top, #29a09d, #5f2c82);*/
+        background: url('../imagens/fundologin.jpg')  no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     section#login {
@@ -52,6 +58,12 @@ Grandes telas: acima de 1200px
         float: right;
         width: 50%;
         height: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     section#login > div#formulario {

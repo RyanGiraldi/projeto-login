@@ -15,7 +15,10 @@
 }
 
 body, html {
-    background-color: #5f2c82;
+    /* background-color: #5f2c82; */
+    background: url('../imagens/fundologin.jpg')  no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
 }
@@ -34,7 +37,7 @@ section#login {
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 550px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
@@ -45,7 +48,7 @@ section#login {
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url('../imagens/fundo.jpg') no-repeat;
+    background: #5f2c82 url('../imagens/fundlogin2.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
     height: 200px;
@@ -53,7 +56,7 @@ section#login > div#imagem {
 
 section#login > div#formulario {
     display: block;
-    padding: 10px;
+    padding: 16px;
 }
 
 div#formulario > h1 {
@@ -64,9 +67,15 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 form > div.campo {
-    background-color: #5f2c82;
-    border: 2px solid #5f2c82;
+    background-color: whitesmoke; /* #5f2c82 */
+    border: 2px solid rgba(0, 0, 0, 0.603); /* #5f2c82 */
     display: block;
     width: 100%;
     height: 40px;
@@ -79,25 +88,26 @@ div.campo > label {
 }
 
 div.campo > i {
-    color: white;
+    color: rgba(0, 0, 0, 0.603);
     font-size: 2em;
     width: 40px;
     padding: 5px;
 }
 
 div.campo > input {
-    background-color: #29a09d;
+    /*background-color: #29a09d;*/
+    background-color: rgba(245, 245, 245, 0);
     font-size: 1em;
-    width: calc(100% - 45px); /*arruma o seu email dentro da caixa/ encaixe*/
+    width: calc(100% - 49px); /*arruma o seu email dentro da caixa/ encaixe*/
     height: 100%;
     border: 0px;
     border-radius: 8px;
     padding: 5px;
-    transform: translateY(-12px);
+    transform: translateY(-13px);
 }
 
 div.campo > input:focus-within {
-    background-color: white;
+    background-color:white
 }
 
 form > input[type=submit] {
@@ -105,16 +115,16 @@ form > input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #29a09d;
-    color: white;
-    font-weight: bolder;
-    border: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #000000;
     border-radius: 5px;
     cursor: pointer;
 }
 
 form > input[type=submit]:hover {
-    background-color: #175351 ;
+    background-color: rgba(128, 128, 128, 0.63); /* #175351 */
+    font-weight: bolder;
 }
 
 form > a.botao {
@@ -126,14 +136,15 @@ form > a.botao {
     padding-top: 8px;
     margin-top: 5px;
     background-color: white;
-    color: #0e3533;
-    border: 1px solid #29a09d;
+    color: black;
+    border: 1px solid #000000;   /* #29a09d */
     border-radius: 5px;
     text-decoration: none;
 }
 
 form > a.botao:hover {
-    background-color: #3ac9c4;
+    background-color: rgba(128, 128, 128, 0.63); /* #3ac9c4 */
+    font-weight: bolder;
 }
 
 form > a.botao > i {
